@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Curso de Neuroimagem</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #e6f2ec;
+      margin: 0;
+      padding: 0;
+      color: #003d33;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    header {
+      padding: 2rem;
+    }
+    img.logo {
+      max-width: 160px;
+      height: auto;
+    }
+    h1 {
+      margin-top: 1rem;
+      font-size: 2rem;
+    }
+    p.descricao {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 1rem auto 2rem;
+    }
+    .pagamento {
+      background: white;
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      max-width: 400px;
+      margin-bottom: 2rem;
+    }
+    .pagamento h2 {
+      margin-bottom: 1rem;
+    }
+    .pix img {
+      width: 200px;
+      margin: 1rem auto;
+    }
+    .botao-stripe, .botao-confirmar {
+      background-color: #00695c;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      margin-top: 1rem;
+      display: inline-block;
+      text-decoration: none;
+    }
+    .botao-stripe:hover, .botao-confirmar:hover {
+      background-color: #004d40;
+    }
+    .link-whatsapp {
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="LOGO VIDA E BEM ESTAR.png" alt="Logo Vida e Bem Estar" class="logo" />
+    <h1>Curso de Neuroimagem</h1>
+    <p class="descricao">Aprenda a interpretar exames de neuroimagem com confiança e segurança clínica.</p>
+  </header>
+
+  <section class="pagamento">
+    <h2>Pague com Pix</h2>
+    <div class="pix">
+      <img src="qrcode_pix_curso_neuroimagem.png" alt="QR Code Pix" />
+      <p><strong>Chave Pix:</strong><br> 39702933000166</p>
+    </div>
+    <button class="botao-confirmar" onclick="mostrarLinkWhatsapp()">Já paguei via Pix</button>
+
+    <hr style="margin: 2rem 0;">
+
+    <h2>Ou pague com Cartão</h2>
+    <a class="botao-stripe" href="https://buy.stripe.com/test_6oUfZacl9fWS8ue7OvbbG00" target="_blank">Pagar com Cartão (Stripe)</a>
+  </section>
+
+  <div id="linkWhatsapp" class="link-whatsapp" style="display:none;">
+    <p><strong>Acesse o grupo exclusivo do WhatsApp:</strong></p>
+    <a class="botao-stripe" href="https://chat.whatsapp.com/IuwEix6JH7CGvUquzF0kc9" target="_blank">Entrar no Grupo</a>
+  </div>
+
+  <script>
+    function mostrarLinkWhatsapp() {
+      document.getElementById("linkWhatsapp").style.display = "block";
+    }
+  </script>
+</body>
+</html>
