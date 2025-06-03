@@ -62,9 +62,6 @@
     .botao-stripe:hover, .botao-confirmar:hover {
       background-color: #004d40;
     }
-    .link-whatsapp {
-      margin-top: 2rem;
-    }
   </style>
 </head>
 <body>
@@ -80,23 +77,12 @@
       <img src="qrcode_pix_curso_neuroimagem.png" alt="QR Code Pix" />
       <p><strong>Chave Pix:</strong><br> 39702933000166</p>
     </div>
-    <button class="botao-confirmar" onclick="mostrarLinkWhatsapp()">Já paguei via Pix</button>
+    <a class="botao-confirmar" href="https://wa.me/message/CDYTSXA6OD6ZF10" target="_blank">Enviar Comprovante Pix</a>
 
     <hr style="margin: 2rem 0;">
 
     <h2>Ou pague com Cartão</h2>
     <a class="botao-stripe" href="https://buy.stripe.com/test_6oUfZacl9fWS8ue7OvbbG00" target="_blank">Pagar com Cartão (Stripe)</a>
   </section>
-
-  <div id="linkWhatsapp" class="link-whatsapp" style="display:none;">
-    <p><strong>Acesse o grupo exclusivo do WhatsApp:</strong></p>
-    <a class="botao-stripe" href="https://chat.whatsapp.com/IuwEix6JH7CGvUquzF0kc9" target="_blank">Entrar no Grupo</a>
-  </div>
-
-  <script>
-    function mostrarLinkWhatsapp() {
-      document.getElementById("linkWhatsapp").style.display = "block";
-    }
-  </script>
 </body>
 </html>
